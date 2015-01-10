@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Test</title>
+    <script src="http://node.ewikisoft.com:3000/test/script?data=0&sleep=2"></script>
+    <script src="http://node.ewikisoft.com:3000/test/script?data=0-defer&sleep=3"></script>
+</head>
+<body>
+<img src="http://placeimg.com/1200/4800/any" />
+    <script type="text/javascript">
+        var s = document.createElement('script');
+        s.type = "text/javascript";
+        s.src = "http://node.ewikisoft.com:3000/test/script?data=1&sleep=5"; // file contains alert("hello!");
+        document.body.appendChild(s);
+    </script>
+    <img src="http://placeimg.com/1200/4800/any" />
+
+    <script type="text/javascript">
+
+        var s = document.createElement('script');
+        s.type = "text/javascript";
+        s.src = "http://node.ewikisoft.com:3000/test/script?data=2&sleep=2"; // file contains alert("hello!");
+        
+        document.body.appendChild(s);
+    </script>
+    <script type="text/javascript">
+        console.log("final");
+    </script>
+    <img src="http://placeimg.com/1200/4800/any" />
+
+        <script src="http://node.ewikisoft.com:3000/test/script?data=0&sleep=2"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "polymer-test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/xiehuiqi220/xiehuiqi220.github.io",
+  "authors": [
+    "伐薪 <huiqi.xhq@alibaba-inc.com>"
+  ],
+  "description": "test",
+  "main": "index.html",
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1"
+  }
+}

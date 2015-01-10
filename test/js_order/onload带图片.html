@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Test</title>
+    <script>
+    var d1 = new Date();
+    </script>
+</head>
+<body>
+<img src="http://placeimg.com/120/480/any" />
+    <script type="text/javascript">
+        var s = document.createElement('script');
+        s.type = "text/javascript";
+        s.src = "http://node.ewikisoft.com:3000/test/script?data=1&sleep=5"; // file contains alert("hello!");
+        document.body.appendChild(s);
+    </script>
+</body>
+</html>
+<script>
+window.onload=function(){
+    var d2 = new Date();
+
+console.log("window.onload",d2-d1);
+}
+</script>

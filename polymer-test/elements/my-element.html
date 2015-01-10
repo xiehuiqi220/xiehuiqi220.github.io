@@ -1,0 +1,18 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-element">
+  <template>
+    <span>Hello ---{{color}}-- from <b>my-el  {{obj.x}} --{{varx}}--  ement</b>. This is my Shadow DOM.,xxx</span>
+    <input value="{{color}}" />
+  </template>
+  <script>
+    Polymer({
+      varx: "abc",
+      color: "red",
+      obj: {
+      	x:123,
+      	y:2
+      }
+    });
+  </script>
+</polymer-element>
